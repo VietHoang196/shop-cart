@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.ccc {
+    color: #ccc;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    /* max-width: 1024px;
+    margin: auto;
+    padding: 20px 15px; */
+    display: grid;
+    grid-template: auto / repeat(8, 1fr);
+    height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    padding: 20px 20px;
+    width: auto;
+    flex-direction: column;
+    position: sticky;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-right: 1px solid #ccc;
+}
+
+.logo img {
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.header .sub-menu {
+    list-style: none;
+}
+
+.header .sub-menu li {
+    margin: 10px 0;
+}
+
+.header .sub-menu li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.header .sub-menu li a:hover,
+.header .sub-menu li a.active {
+    color: green;
+}
+
+.header a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 12px;
+    width: 100px;
+}
+
+.content {
+    grid-column: 2 / 7;
+    border-right: 1px solid #ccc;
+}
+
+.head {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.head .search {
+    margin-right: 40px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.head input {
+    border: none;
+    width: 95%;
+    outline: none;
+}
+
+.text h3 {
+    text-align: right;
+}
+
+.text p {
+    text-align: right;
+    font-size: 14px;
+}
+
+.head .avatar {
+    width: 40px;
+    border-radius: 100px;
+    overflow: hidden;
+    height: 100%;
+    margin: 0 10px;
+}
+
+.head .notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 100px;
+}
+
+.head .fa-bell {
+    font-size: 20px;
+    color: #000;
+}
+
+.categories {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.categories .main-menu {
+    overflow-x: auto;
+}
+
+.categories .menu {
+    display: block;
+    white-space: nowrap;
+}
+
+.menu > button {
+    margin: 20px 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.menu button:hover {
+    background-color: lightgreen;
+    border: 1px solid green;
+    color: green;
+}
+
+.menu img {
+    width: 50px;
+}
+
+.image-item {
+	padding-top: 100%;
+	background: #d4d4d4 no-repeat center;
+	background-size: cover;
+}
+
+/* Menu */
+
+.select-menu .list {
+    padding: 0 20px 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 20% auto;
+    padding: 10px;
+    column-gap: 20px;
+    border-radius: 20px;
+}
+
+.item .content-item .title {
+    font-weight: bold;
+}
+
+.item .content-item .des {
+    font-size: small;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
+.item .content-item .price {
+    color: lightseagreen;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: small;
+    margin-top: 5px;
+}
+
+.item .count {
+    width: 100px;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 3px 5px;
+    border: 1px solid lightgreen;
+    outline: none;
+    margin-top: 5px;
+}
+
+.item .content-item .add {
+    margin-top: 5px;
+    background-color: lightgreen;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.item .content-item .remove {
+    padding: 5px;
+    border: none;
+    margin-top: 5px;
+    border-radius: 10px;
+    display: none;
+}
+
+/*End Menu*/
+
+.cart {
+    grid-column: 7 / 9;
+}
+
+.cart .item {
+    transition: 0.5s;
+    border-bottom: 1px solid #fff;
+}
+
+.cart .name {
+    padding: 20px;
+    height: 70px;
+    font-weight: bold;
+    font-size: xx-large;
+    border-bottom: 1px solid #ccc;
+}
+
+.danger {
+    box-shadow: 0 10px 10px green;
+    transform:  translate(0, -10px);
+}
+
+.cart .add {
+    display: none;
+}
+
+.cart .remove {
+    display: inline-block !important;
+}

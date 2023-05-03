@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="container">
+
+        <header class="header flex-center">
+            <div class="logo">
+                <img src="./images/logo.png" alt="Đây là logo nha!">
+                <ul class="sub-menu">
+                    <li class="menu"><a class="active" href=""><i class="fa-solid fa-bars"></i> Menu</a></li>
+                    <li class="order"><a href=""><i class="fa-solid fa-list-ul"></i> Order List</a></li>
+                    <li class="history"><a href=""><i class="fa-regular fa-clock"></i> History</a></li>
+                    <li class="bills"><a href=""><i class="fa-solid fa-money-bills"></i> Bills</a></li>
+                    <hr>
+                    <li class="setting"><a href=""><i class="fa-solid fa-gear"></i> Setting</a></li>
+                    <li class="help"><a href=""><i class="fa-regular fa-circle-question"></i> Help Center</a></li>
+                </ul>
+            </div>
+            <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i> Sign out</a>
+        </header>
+        <main class="content">
+            <div class="head flex-center">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass ccc"></i>
+                    <input type="text" placeholder=" Search..">
+                </div>
+                <div class="text flex-center">
+                    <div class="sub-text">
+                        <h3>Yth.Rijal</h3>
+                        <p class="ccc">Sunday, 15 January 2023</p>
+                    </div>
+                    <a href="">
+                        <img class="avatar" src="./images/avatar.jpg" alt="">
+                    </a>
+                    <div class="notification">
+                        <a href=""><i class="fa-solid fa-bell"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="categories">
+                <h3>Categories</h3>
+                <div class="main-menu">
+                    <div class="menu">
+                        <button class="all-menu">
+                            <img src="./images/icon/menu.png" alt="">
+                            <p>All menu</p>
+                        </button>
+                        <button class="coffee">
+                            <img src="./images/icon/coffe.png" alt="">
+                            <p>Coffee</p>
+                        </button>
+                        <button class="tea">
+                            <img src="./images/icon/tea.png" alt="">
+                            <p>Tea</p>
+                        </button>
+                        <button class="juice">
+                            <img src="./images/icon/juice.png" alt="">
+                            <p>Juice</p>
+                        </button>
+                        <button class="rice">
+                            <img src="./images/icon/rice.png" alt="">
+                            <p>Rice</p>
+                        </button>
+                        <button class="pasta">
+                            <img src="./images/icon/pasta.png" alt="">
+                            <p>Pasta</p>
+                        </button>
+                        <button class="pizza">
+                            <img src="./images/icon/pizza.png" alt="">
+                            <p>Pizza</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="select-menu">
+                <div class="list">
+                    <div class="bac-siu item" data-key="1">
+                        <div class="img">
+                            <img src="./images/drink/bac-siu.jpg" alt="">
+                        </div>
+                        <div class="content-item">
+                            <div class="title">Bạc sỉu</div>
+                            <div class="des">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus adipisci assumenda architecto nesciunt sapiente, repellat beatae! Optio rerum id ab, deleniti iure facere fugiat. Voluptate repellat provident eligendi? Soluta, sapiente.
+                            </div>
+                            <div class="price">$20.00</div>
+                            <input type="number" class="count" min="1" value="bac-siu">
+                            <button class="add">Add to Cart</button>
+                            <button class="remove" onclick="Remove(1)"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="bac-siu-nong item" data-key="2">
+                        <div class="img">
+                            <img src="./images/drink/bac-siu-nong.jpg" alt="">
+                        </div>
+                        <div class="content-item">
+                            <div class="title">Bạc sỉu nóng</div>
+                            <div class="des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus adipisci assumenda architecto nesciunt sapiente, repellat beatae! Optio rerum id ab, deleniti iure facere fugiat. Voluptate repellat provident eligendi? Soluta, sapiente.</div>
+                            <div class="price">$22.00</div>
+                            <input type="number" class="count" min="1" value="bac-siu-nong">
+                            <button class="add">Add to Cart</button>
+                            <button class="remove" onclick="Remove(2)"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="den-da item" data-key="3">
+                        <div class="img">
+                            <img src="./images/drink/den-da.jpg" alt="">
+                        </div>
+                        <div class="content-item">
+                            <div class="title">Đen đá</div>
+                            <div class="des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus adipisci assumenda architecto nesciunt sapiente, repellat beatae! Optio rerum id ab, deleniti iure facere fugiat. Voluptate repellat provident eligendi? Soluta, sapiente.</div>
+                            <div class="price">$15.00</div>
+                            <input type="number" class="count" min="1" value="den-da">
+                            <button class="add">Add to Cart</button>
+                            <button class="remove" onclick="Remove(3)"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="den-nong item" data-key="4">
+                        <div class="img">
+                            <img src="./images/drink/den-nong.jpg" alt="">
+                        </div>
+                        <div class="content-item">
+                            <div class="title">Đen nóng</div>
+                            <div class="des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus adipisci assumenda architecto nesciunt sapiente, repellat beatae! Optio rerum id ab, deleniti iure facere fugiat. Voluptate repellat provident eligendi? Soluta, sapiente.</div>
+                            <div class="price">$10.00</div>
+                            <input type="number" class="count" min="1" value="den-nong">
+                            <button class="add">Add to Cart</button>
+                            <button class="remove" onclick="Remove(4)"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="macchiato item" data-key="5">
+                        <div class="img">
+                            <img src="./images/drink/macchiato.jpg" alt="">
+                        </div>
+                        <div class="content-item">
+                            <div class="title">Macchiato</div>
+                            <div class="des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus adipisci assumenda architecto nesciunt sapiente, repellat beatae! Optio rerum id ab, deleniti iure facere fugiat. Voluptate repellat provident eligendi? Soluta, sapiente.</div>
+                        <div class="price">$30.00</div>
+                        <input type="number" class="count" min="1" value="macchiato">
+                        <button class="add">Add to Cart</button>
+                        <button class="remove" onclick="Remove(5)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                    <div class="sua-da item" data-key="6">
+                        <div class="img">
+                            <img src="./images/drink/sua-da.jpg" alt="">
+                        </div>
+                        <div class="content-item">
+                            <div class="title">Sữa đá</div>
+                            <div class="des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus adipisci assumenda architecto nesciunt sapiente, repellat beatae! Optio rerum id ab, deleniti iure facere fugiat. Voluptate repellat provident eligendi? Soluta, sapiente.</div>
+                            <div class="price">$20.00</div>
+                            <input type="number" class="count" min="1" value="sua-da">
+                            <button class="add">Add to Cart</button>
+                            <button class="remove" onclick="Remove(6)"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- item -->
+            <!-- <div class="select-menu">
+                <div class="bac-siu" data-key = '1'>
+                    <div class="main-item">
+                        <div class="image-item" style="background-image: url(./images/drink/bac-siu.jpg)"></div>
+                        <h3>Bạc sỉu</h3>
+                        <p>24 Available - 6 sold</p>
+                        <h2>$35.00</h2>
+                    </div>
+                    <div class="sub-item">
+                        <select name="cup-size">
+                            <option value="">Kích cỡ</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <select name="ice-level">
+                            <option value="">Mức đá</option>
+                            <option value="30">30%</option>
+                            <option value="50">50%</option>
+                            <option value="80">80%</option>
+                        </select>
+                        <select name="sugar-level">
+                            <option value="">Mức đường</option>
+                            <option value="30">30%</option>
+                            <option value="50">50%</option>
+                            <option value="80">80%</option>
+                        </select>
+                        <input type="text" placeholder="Số lượng">
+                    </div>
+                    <button class="add-shopcart"></button>
+                </div>
+                <button class="add-cart">Add to Cart</button>
+            </div> -->
+        </main>
+
+        <div class="cart">
+            <div class="name">Cart</div>
+            <div class="listCart">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
